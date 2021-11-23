@@ -6,9 +6,9 @@ A replacement of [`qsreplace`](https://github.com/tomnomnom/qsreplace), accepts 
 
 <h3><b>Installation</b></h3><br/>
 
-```css
+```bash
 $root:~ sudo apt install python3 python3-pip
-$root:~ wget https://raw.githubusercontent.com/ROX4R/bhedak/main/bhedak && chmod +x bhedak && mv bhedak /usr/bin/
+$root:~ wget https://raw.githubusercontent.com/R0X4R/bhedak/main/bhedak && chmod +x bhedak && mv bhedak /usr/bin/
 ```
 
 <h3><b>Usage</b></h3><br/>
