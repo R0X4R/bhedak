@@ -76,4 +76,4 @@ If this tool helped you or you like my work<br/>
 
 ---
 
-Thanks to [`@tomnomnom`](https://github.com/tomnomnom) for making this an amazing tool called [`qsreplace`](https://github.com/tomnomnom/qsreplace), from using [`qsreplace`](https://github.com/tomnomnom/qsreplace) I got idea to make `bhedak`
+Thanks to [`@tomnomnom`](https://github.com/tomnomnom) for making an amazing tool called [`qsreplace`](https://github.com/tomnomnom/qsreplace), from using [`qsreplace`](https://github.com/tomnomnom/qsreplace) I got idea to make `bhedak`
