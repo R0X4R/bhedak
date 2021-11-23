@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# bhedak v1.0
+# A replacement of "qsreplace", accepts URLs as standard input, replaces all query string values with user-supplied values and stdout
+# Author: R0X4R (twitter.com/R0X4R)
+
+urEncode=$(python3 -c "import urllib.parse as ul, sys; print(ul.quote(sys.argv[1], safe=''))" $1)
+# echo -e "$urEncode"
+
+while read line; do
+    echo -e "$line" | sed -e "s!=[^&]*!=$urEncode!g"
+done < /dev/stdin
