@@ -15,6 +15,33 @@ $ wget -O bhedak https://raw.githubusercontent.com/R0X4R/bhedak/main/bhedak.py -
 
 <h3><b>Usage</b></h3><br/>
 
+- **For `linux`, `unix` and `debian` based systems**
+
+    ![linux](.github/linux.jpg)
+
+    ```bash
+    $ waybackurls target.tld | bhedak "payload"
+    ```
+
+- **For `windows` based systems**
+
+    ![windows](.github/windows.png)
+
+    ```css
+    cmd> type urls.txt | python bhedak.py "payload"
+    ```
+
+- **If no `payload` passed**
+
+    ```bash
+    $ waybackurls subdomain.target.tld | bhedak
+    
+    http://subdomain.target.tld/comment.php?pid=FUZZ&user=FUZZ
+    http://subdomain.target.tld/disclaimer.php=FUZZ
+    http://subdomain.target.tld/hpp/index.php?pp=FUZZ
+    http://subdomain.target.tld/hpp/?pp=FUZZ&user=FUZZ
+    ```
+
 - **Example input file**
     
     ```bash
