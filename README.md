@@ -10,7 +10,7 @@ A replacement of [`qsreplace`](https://github.com/tomnomnom/qsreplace), accepts 
 <h3><b>Installation</b></h3><br/>
 
 ```bash
-$ pip3 install bhedak
+$ wget -O bhedak https://raw.githubusercontent.com/R0X4R/bhedak/main/bhedak.py -q && chmod +x bhedak && mv bhedak /usr/bin/
 ```
 
 <h3><b>Usage</b></h3><br/>
