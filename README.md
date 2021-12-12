@@ -1,5 +1,5 @@
 <p align="center">
-<img src=".github/image.png" width=30%>
+<img src=".github/image.png" width=20%>
 </p>
 <h1 align="center">
 <b>Bhedak</b>
