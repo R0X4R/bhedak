@@ -1,4 +1,6 @@
-<center><img src=".github/image.png" width=30%></center>
+<p align="center">
+<img src=".github/image.png" width=30%>
+</p>
 <h1 align="center">
 <b>Bhedak</b>
 </h2>
