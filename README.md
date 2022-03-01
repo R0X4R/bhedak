@@ -9,12 +9,12 @@ A replacement of [`qsreplace`](https://github.com/tomnomnom/qsreplace), accepts 
 
 <h3><b>Installation</b></h3><br/>
 
-```bash
+```sh
 $ pip3 install bhedak
 ```
 
 
-```bash
+```sh
 $ wget -O bhedak https://raw.githubusercontent.com/R0X4R/bhedak/main/bhedak.py -q && chmod +x bhedak && mv bhedak /usr/bin/
 ```
 
@@ -24,7 +24,7 @@ $ wget -O bhedak https://raw.githubusercontent.com/R0X4R/bhedak/main/bhedak.py -
 
     ![linux](.github/linux.jpg)
 
-    ```bash
+    ```sh
     $ waybackurls target.tld | bhedak "payload"
     ```
 
@@ -32,13 +32,13 @@ $ wget -O bhedak https://raw.githubusercontent.com/R0X4R/bhedak/main/bhedak.py -
 
     ![windows](.github/windows.png)
 
-    ```css
+    ```sh
     cmd> type urls.txt | python bhedak.py "payload"
     ```
 
 - **If no `payload` passed**
 
-    ```bash
+    ```console
     $ waybackurls subdomain.target.tld | bhedak
     
     http://subdomain.target.tld/comment.php?pid=FUZZ&user=FUZZ
@@ -49,7 +49,7 @@ $ wget -O bhedak https://raw.githubusercontent.com/R0X4R/bhedak/main/bhedak.py -
 
 - **Example input file**
     
-    ```bash
+    ```console
     $ waybackurls subdomain.target.tld | tee -a urls
 
     http://subdomain.target.tld/comment.php?pid=username&user=1
@@ -60,7 +60,7 @@ $ wget -O bhedak https://raw.githubusercontent.com/R0X4R/bhedak/main/bhedak.py -
 
 - **Replace query string values**
 
-    ```bash
+    ```console
     $ cat urls | bhedak "FUZZ"
 
     http://subdomain.target.tld/comment.php?pid=FUZZ&user=FUZZ
@@ -71,7 +71,7 @@ $ wget -O bhedak https://raw.githubusercontent.com/R0X4R/bhedak/main/bhedak.py -
 
 - **Replace query string with custom payloads**
 
-    ```bash
+    ```console
     $ cat urls | bhedak "\"><svg/onload=alert(1)>*'/---+{{7*7}}"
 
     http://subdomain.target.tld/comment.php?pid=%22%3E%3Csvg%2Fonload%3Dalert%281%29%3E%2A%27%2F---%2B%7B%7B7%2A7%7D%7D&user=%22%3E%3Csvg%2Fonload%3Dalert%281%29%3E%2A%27%2F---%2B%7B%7B7%2A7%7D%7D
@@ -81,7 +81,7 @@ $ wget -O bhedak https://raw.githubusercontent.com/R0X4R/bhedak/main/bhedak.py -
     ```
 - **Remove duplicate urls**
 
-    ```bash
+    ```console
     $ cat urls | bhedak "FUZZ" | sort -u
 
     http://subdomain.target.tld/comment.php?pid=FUZZ&user=FUZZ
@@ -95,7 +95,7 @@ $ wget -O bhedak https://raw.githubusercontent.com/R0X4R/bhedak/main/bhedak.py -
     <br/><img src=".github/image.jpg"><br/>
 
 
-    ```bash
+    ```console
     $ echo "http://fakedomain.com/fakefile.jsp;jsessionid=2ed4262dbe69850d25bc7c6424ba59db?hardwareid=14&tarifid=9998" | qsreplace "FUZZ"
     http://fakedomain.com/fakefile.jsp;jsessionid=2ed4262dbe69850d25bc7c6424ba59db?hardwareid=FUZZ&tarifid=FUZZ
     
